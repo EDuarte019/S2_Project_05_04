@@ -9,7 +9,7 @@
    Author: 
    Date:   
 
-   Filename:         pcg_paper.css
+   Filename: pcg_paper.css
    Supporting Files: 
 
 */
@@ -26,13 +26,16 @@ body {
     min-width: 640px;
     height: 100%;
     background-color: rgba(255, 255, 255, 0.144);
+    display: block;
+    padding: 5%;
 }
 
 header img {
     width: 100%;
+    display: block;
 }
 
-.verticalNavigation li {
+body nav ul li {
     display: block;
     width: 12.5%;
     float: left;
@@ -41,25 +44,86 @@ header img {
 footer::after {
     clear: both;
     content: "";
-    display: table;
+    /* display: table; */
+    display: block;
 }
 
 #vNav1 {
     width: 25%;
     float: left;
+    display: block;
 }
 
 #vNav2 {
     width: 25%;
     float: left;
+    display: block;
 }
 
 #vNav3 {
     width: 25%;
     float: left;
+    display: block;
 }
 
 #vNav4 {
     width: 25%;
     float: left;
+    display: block;
+}
+
+#vNav1 ul li,
+#vNav2 ul li,
+#vNav3 ul li,
+#vNav4 ul li {
+    float: none;
+}
+
+nav ul li {
+    background-color: black;
+    display: block;
+    width: 100%;
+}
+
+nav ul,
+nav {
+    display: block;
+    width: 100%;
+    margin: 0;
+    height: auto;
+}
+
+p {
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+nav ul {
+    margin-left: 1em;
+    line-height: 2em;
+}
+
+nav a:link,
+nav a:visited {
+    color: rgb(186, 186, 156);
+}
+
+nav a:hover,
+nav a:active {
+    text-decoration: underline;
+}
+
+div {
+    display: block;
+}
+
+a {
+    display: block;
+    width: 100%;
+}
+
+div.vNav {
+    display: block;
+    width: 100%;
+    /* box-sizing: border-box; */
 }
